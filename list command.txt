@@ -1,0 +1,20 @@
+git init
+git remote add origin https://github.com/mensalda/EvseevMA_task3.git
+git add .
+git commit -m "first commit"
+git push -u origin master
+
+git branch comment
+git checkout comment
+git commit -a -m "comment"
+git checkout master
+
+git branch rating
+git checkout rating
+git commit -a -m "rating"
+
+git checkout master
+git merge comment
+git merge rating
+git commit -a -m "merge file"
+git push
